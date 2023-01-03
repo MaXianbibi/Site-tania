@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&family=Raleway:wght@100;500;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+li,
+a,
+button,
+h1,
+h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    height: 70px;
+
+
+    box-shadow: 0px 2px 19px -4px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: 0px 2px 19px -4px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 0px 2px 19px -4px rgba(0, 0, 0, 0.62);
+
+    -webkit-border-bottom-right-radius: 25px;
+    -webkit-border-bottom-left-radius: 25px;
+    -moz-border-radius-bottomright: 25px;
+    -moz-border-radius-bottomleft: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+.logo {
+    cursor: pointer;
+    max-height: 70px;
+    max-width: 70px;
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover {
+
+    color: rgba(0, 136, 169, 0.8);
+}
+
+button {
+
+    padding: 9px 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* MAIN */
+main article {
+    position: relative;
+    margin: 1% 10%;
+    height: 600px;
+    width: 450px;
+}
+
+main article h1 {
+    color: black;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 60px;
+    padding-bottom: 25px;
+}
+
+main article h5 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.img-bg {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 0;
+}
+
+.curve
+{
+    aspect-ratio: 960/190;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.layer1 {
+    background-image: url('image/layered-peaks-haikei.svg');
+}
+
+main section {
+    height: 600px;
+    width: 450px;
+    /* border: 1px solid black;*/
+
+    border-image: linear-gradient(black, #649af3) 30;
+
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 5%;
+
+    display: flex;
+    position: relative;
+
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: #679ffa; */
+}
+
+main section h1 {
+    padding: 10px;
+    font-weight: 900;
+    font-size: 40px;
+    padding-bottom: 25px;
+    text-align: center; 
+
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+}
+
+.inpute-data
+{
+    height: 40px;
+    width: 75%;
+    position: relative;
+    margin: 3% 10%;
+}
+
+.input-email {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px silver solid;
+
+    font-size: 17px;
+}
+
+.inpute-data label {
+    position:  absolute;
+    right: 240px;
+    left: 0px;
+    top: 10px;
+    pointer-events: none;
+    color: silver;
+    transition: all 0.3s ease 0s;
+
+}
+
+.input-email:focus {
+    outline: none;
+}
+
+.input-email:focus ~ label,
+.input-email:valid ~ label  
+{
+    transform: translateY(-20px);
+    color: #649af3;
+}
