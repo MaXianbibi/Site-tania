@@ -7,7 +7,13 @@
     z-index: 1;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+
 }
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 li,
 a,
@@ -19,6 +25,7 @@ h5 {
     font-weight: 500;
     color: black;
     text-decoration: none;
+    
 }
 
 header {
@@ -28,21 +35,21 @@ header {
     align-items: center;
     padding: 30px 10%;
     height: 70px;
-
-
+    
+    
     box-shadow: 0px 2px 19px -4px rgba(0, 0, 0, 0.62);
     -webkit-box-shadow: 0px 2px 19px -4px rgba(0, 0, 0, 0.62);
     -moz-box-shadow: 0px 2px 19px -4px rgba(0, 0, 0, 0.62);
-
+    
     -webkit-border-bottom-right-radius: 25px;
     -webkit-border-bottom-left-radius: 25px;
     -moz-border-radius-bottomright: 25px;
     -moz-border-radius-bottomleft: 25px;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-
+    
     margin-bottom: 25px;
-
+    
 }
 
 .logo {
@@ -91,6 +98,9 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    align-items: baseline
+
+
 
 }
 
@@ -102,7 +112,7 @@ main article, main section {
 /* MAIN */
 main article {
     position: relative;
-    margin: 1% 2% 1% 10%;
+    margin: 0 2% 1% 5%;
     width: 450px;
     min-width: 435px;
     min-height: 435px;
@@ -130,7 +140,7 @@ main article h5 {
 
 .curve
 {
-    aspect-ratio: 960/360;
+    aspect-ratio: 960/200;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -159,7 +169,7 @@ main section {
     justify-content: flex-start;
     flex-direction: column;
 
-    margin: 0px 5% 5% 5%;
+    margin: 5% 5% 5% 5%;
     /* background-color: #679ffa; */
 }
 
@@ -281,3 +291,81 @@ main section h1 {
     border-color: #649af3 ;
 }
 
+
+
+.about {
+height: 1200px;
+width: 100%;
+/* background-color: #324e7a; */
+background: linear-gradient(#3b5c90, #4736AD);
+/* background: linear-gradient(#3b5c90, #552583); */
+display: flex;
+position: relative;
+padding: 100px;
+flex-wrap: wrap;
+gap: 5%;
+align-content: flex-start;
+align-items: center;
+justify-content: center;
+}
+
+.text-about {
+    /* flex: 1;  */
+    width: 47.5%;
+}
+
+.about :nth-child(1)
+{
+    position: relative;
+    left: 1vw;
+}
+
+.text-about h1 {
+    border-right: solid 5px white;
+    
+    color: white;
+    font-size: 5.5vw;
+}
+
+.text-about h5 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2vw;
+}
+
+.cp-logo-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.cp-logo {
+    /* flex: 1; */
+    height: 300px;
+    width: 300px;
+    border: solid 2px #FDB927;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    gap: 20px
+}
+
+.cp-logo span {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    transform: scale(4);
+}
+.cp-logo h1 {
+    font-size: 3vw;
+}
+.cp-logo p {
+    font-size: 1.25vw;
+}
