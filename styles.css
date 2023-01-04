@@ -89,15 +89,23 @@ main {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main article, main section {
+    flex: 1 1;
 
 }
 
 /* MAIN */
 main article {
     position: relative;
-    margin: 1% 10%;
-    height: 600px;
+    margin: 1% 2% 1% 10%;
     width: 450px;
+    min-width: 435px;
+    min-height: 435px;
 }
 
 main article h1 {
@@ -122,7 +130,7 @@ main article h5 {
 
 .curve
 {
-    aspect-ratio: 960/190;
+    aspect-ratio: 960/360;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -135,6 +143,8 @@ main article h5 {
 main section {
     height: 600px;
     width: 450px;
+
+    max-width: 600px;
     /* border: 1px solid black;*/
 
     border-image: linear-gradient(black, #649af3) 30;
@@ -148,6 +158,8 @@ main section {
 
     justify-content: flex-start;
     flex-direction: column;
+
+    margin: 0px 5% 5% 5%;
     /* background-color: #679ffa; */
 }
 
