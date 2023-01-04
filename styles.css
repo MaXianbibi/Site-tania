@@ -4,9 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
     z-index: 1;
-    background-color: transparent;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
@@ -190,7 +188,7 @@ main section h1 {
     pointer-events: none;
     color: silver;
     transition: all 0.3s ease 0s;
-
+    
 }
 
 .input-email:focus {
@@ -203,3 +201,29 @@ main section h1 {
     transform: translateY(-20px);
     color: #649af3;
 }
+
+.inpute-data .underline {
+    
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+}
+.inpute-data .underline:before {
+    
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 100%;
+    background: #649af3;
+    transform: scaleX(0);
+    transition: all 0.3s ease 0s;
+}
+
+
+.input-email:focus ~ .underline:before,
+.input-email:valid ~ .underline:before  
+{
+   transform: scaleX(1);
+}
+
